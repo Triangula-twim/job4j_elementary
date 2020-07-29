@@ -6,12 +6,10 @@ import org.junit.Test;
 public class PointTest {
     @Test
     public void correctDistance() {
-        int x1 = 1;
-        int y1 = 1;
-        int x2 = 5;
-        int y2 = 4;
+        Point a = new Point(1, 1);
+        Point b = new Point(5, 4);
         double out = 5;
-        double excepted = Point.distance(x1, y1, x2, y2);
+        double excepted = a.distance(b);
         Assert.assertEquals(excepted, out, 0.01);
     }
 }
